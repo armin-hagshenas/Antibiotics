@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مقاومت میکروبی؛ چرا آنتی‌بیوتیک‌ها کم‌اثر می‌شوند؟</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eaf4f1;--surf:#fff;--ink:#0f2f2b;--mute:#4f6f69;--line:#c4ddd6;--teal:#0b7a6e;--mag:#c2185b;--amb:#f2b134;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1f1d;--surf:#123532;--ink:#e6f5f1;--mute:#9cc2bb;--line:#25504b;--teal:#3fd0bd;--mag:#ff6fa3;--on:#06201c}}
+:root[data-theme="dark"]{--bg:#0b1f1d;--surf:#123532;--ink:#e6f5f1;--mute:#9cc2bb;--line:#25504b;--teal:#3fd0bd;--mag:#ff6fa3;--on:#06201c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 Vazirmatn,Tahoma,sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem;line-height:1.5;margin:0 0 4px;font-weight:800}
+h2{font-size:1.15rem;margin:0 0 8px;font-weight:800}
+.sub{color:var(--mute);margin:0 0 14px;font-size:.95rem}
+nav{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px}
+nav button{flex:none;border:2px solid var(--line);background:var(--surf);color:var(--ink);border-radius:99px;padding:4px 14px;font:700 .95rem Vazirmatn,Tahoma,sans-serif;cursor:pointer}
+nav button[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:var(--on)}
+.card{background:var(--surf);border:2px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}
+button:focus-visible,a:focus-visible{outline:3px solid var(--amb);outline-offset:2px}
+.btn{display:block;width:100%;text-align:right;font:700 1rem/1.7 Vazirmatn,Tahoma,sans-serif;color:var(--ink);background:var(--surf);border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:8px;cursor:pointer}
+.btn:hover:not(:disabled){border-color:var(--teal)}
+.btn.ok{background:var(--teal);border-color:var(--teal);color:var(--on)}
+.btn.no{background:var(--mag);border-color:var(--mag);color:#fff;animation:shake .4s}
+.btn:disabled{cursor:default}
+.main{background:var(--teal);color:var(--on);border-color:var(--teal);text-align:center}
+.main:disabled{opacity:.5}
+.sec{background:none;text-align:center}
+.q{font-size:1.15rem;font-weight:700;margin-bottom:12px}
+.why{border-right:5px solid var(--amb);padding:4px 12px;margin:10px 0;background:var(--bg);border-radius:8px}
+.why small{display:block;color:var(--mute)}
+.why a{color:var(--teal);font-weight:700}
+.meta{display:flex;justify-content:space-between;color:var(--mute);font-size:.9rem;margin-bottom:6px}
+.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin-bottom:12px}
+.bar i{display:block;height:100%;background:var(--teal);transition:width .3s}
+.dish{width:min(100%,330px);aspect-ratio:1;margin:0 auto 12px;border-radius:50%;border:6px solid var(--line);background:radial-gradient(circle,var(--surf),var(--bg));display:grid;grid-template-columns:repeat(9,1fr);align-content:center;gap:4px;padding:34px}
+.dish i{aspect-ratio:1;border-radius:50%;background:var(--teal);transition:background .4s,transform .4s,opacity .4s}
+.dish i.r{background:var(--mag)}
+.dish i.d{background:var(--line);transform:scale(.4);opacity:.5}
+.stats{display:flex;gap:10px;margin-bottom:10px}
+.stats div{flex:1;text-align:center;border:2px solid var(--line);border-radius:14px;padding:6px}
+.stats b{display:block;font-size:1.5rem;line-height:1.4}
+.lg{display:flex;gap:14px;justify-content:center;font-size:.9rem;color:var(--mute);margin-bottom:10px}
+.lg span:before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;margin-left:6px;vertical-align:middle;background:var(--teal)}
+.lg .m:before{background:var(--mag)}
+.note{color:var(--mute);font-size:.88rem}
+ul.src{padding-right:20px;margin:0}
+ul.src li{margin-bottom:8px}
+ul.src a{color:var(--teal);font-weight:700;word-break:break-all}
+.end{text-align:center;padding:20px 8px}
+.end .big{font-size:2.2rem;font-weight:800}
+@keyframes shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<h1>مقاومت میکروبی؛ چرا آنتی‌بیوتیک‌ها کم‌اثر می‌شوند؟</h1>
+<p class="sub">یاد بگیر، امتحان کن و منبع هر نکته را ببین.</p>
+<nav id="nav"></nav>
+<div id="app"></div>
+</main>
+<script>
+const $=s=>document.querySelector(s),app=$("#app");
+const fa=n=>Number(n).toLocaleString("fa-IR");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const S={
+ fact:["WHO: Antimicrobial resistance (fact sheet)","https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"],
+ glass:["WHO: Widespread resistance to common antibiotics (13 Oct 2025)","https://www.who.int/news/item/13-10-2025-who-warns-of-widespread-resistance-to-common-antibiotics-worldwide"],
+ eu:["WHO/Europe: Antimicrobial resistance (fact sheet)","https://www.who.int/europe/news-room/fact-sheets/item/antimicrobial-resistance"],
+ file:["WHO: Antimicrobial resistance fact file","https://www.who.int/features/factfiles/antimicrobial_resistance/en/"],
+ work:["WHO: Antimicrobial resistance (our work)","https://www.who.int/our-work/antimicrobial-resistance"],
+ paho:["PAHO: WHO warns of widespread resistance (13 Oct 2025)","https://www.paho.org/en/news/13-10-2025-who-warns-widespread-resistance-common-antibiotics-worldwide"],
+ cidrap:["CIDRAP: WHO, AMR is widespread globally and increasing","https://www.cidrap.umn.edu/antimicrobial-stewardship/who-antimicrobial-resistance-widespread-globally-and-increasing"],
+ rep:["WHO: Global antibiotic resistance surveillance report 2025 (summary)","https://www.who.int/publications/i/item/B09585"]
+};
+const TF=[
+ {q:"مقاومت میکروبی فقط مربوط به باکتری‌هاست.",o:["درست","غلط"],a:1,w:"غلط است. باکتری‌ها، ویروس‌ها، قارچ‌ها و انگل‌ها همگی می‌توانند به داروهای ضدمیکروبی پاسخ ندهند. آنتی‌بیوتیک فقط یکی از انواع ضدمیکروب‌هاست.",s:["fact"]},
+ {q:"مقاومت میکروبی پدیده‌ای طبیعی است که با تغییرات ژنتیکی میکروب‌ها در طول زمان رخ می‌دهد.",o:["درست","غلط"],a:0,w:"درست است. اما WHO مصرف نابجای ضدمیکروب‌ها را محرک این روند می‌داند و سرعتش را بالا می‌برد.",s:["eu","work"]},
+ {q:"وقتی باکتری‌ها با آنتی‌بیوتیک روبه‌رو می‌شوند، حساس‌ها از بین می‌روند و مقاوم‌ها می‌مانند و ویژگی‌شان را به نسل بعد می‌دهند.",o:["درست","غلط"],a:0,w:"درست است. این همان انتخاب طبیعی است که در شبیه‌ساز می‌بینی.",s:["file"]},
+ {q:"بدن ما در برابر آنتی‌بیوتیک‌ها مقاوم می‌شود.",o:["درست","غلط"],a:1,w:"غلط است. این میکروب‌ها هستند که دیگر به دارو پاسخ نمی‌دهند، نه بدن انسان.",s:["fact"]},
+ {q:"آنتی‌بیوتیک‌ها روی عفونت‌های ویروسی مثل آنفلوانزا و سرماخوردگی اثر ندارند.",o:["درست","غلط"],a:0,w:"درست است. آنتی‌بیوتیک‌ها علیه باکتری‌ها هستند و مصرف بی‌مورد آن‌ها فایده‌ای ندارد و فقط به مقاومت دامن می‌زند.",s:["fact","work"]},
+ {q:"مقاومت آنتی‌بیوتیکی فقط مشکل کشورهای کم‌درآمد است.",o:["درست","غلط"],a:1,w:"غلط است. در ۲۰۲۳ از هر ۱۰ عفونت در اروپا حدود ۱ مورد مقاوم بود و در منطقه‌ی آمریکا ۱ از ۷. در آفریقا ۱ از ۵ و در جنوب‌شرق آسیا و مدیترانه‌ی شرقی ۱ از ۳.",s:["glass","paho","cidrap"]},
+ {q:"در سال ۲۰۲۳ از هر ۶ عفونت باکتریایی رایجِ تأییدشده در آزمایشگاه، حدود یکی به آنتی‌بیوتیک‌های درمانی مقاوم بود.",o:["درست","غلط"],a:0,w:"درست است. این عدد از گزارش GLASS سال ۲۰۲۵ سازمان جهانی بهداشت است.",s:["glass","rep"]},
+ {q:"مصرف آنتی‌بیوتیک در دام و تولید غذا هیچ ربطی به مقاومت ندارد.",o:["درست","غلط"],a:1,w:"غلط است. WHO مصرف نابجا در سلامت انسان و دام، تولید غذا و آلودگی محیطی را از محرک‌ها می‌داند و رویکرد «یک سلامت» را توصیه می‌کند.",s:["work","glass"]},
+ {q:"بیش از ۴۰٪ باکتری‌های E. coli در جهان به سفالوسپورین‌های نسل سوم مقاوم‌اند.",o:["درست","غلط"],a:0,w:"درست است. برای کلبسیلا پنومونیه این رقم بیش از ۵۵٪ است. این داروها خط اول درمان این عفونت‌ها هستند.",s:["glass"]},
+ {q:"مقاومت به کارباپنم‌ها، که از آنتی‌بیوتیک‌های آخرین خط درمان‌اند، پدیده‌ای نادر است و کمتر می‌شود.",o:["درست","غلط"],a:1,w:"غلط است. مقاومت به کارباپنم که قبلاً نادر بود، اکنون شایع‌تر شده و گزینه‌های درمان را محدود می‌کند.",s:["glass"]}
+];
+const SC=[
+ {q:"گلودرد و آب‌ریزش بینی داری و از دوره‌ی قبلی چند قرص آنتی‌بیوتیک مانده. چه می‌کنی؟",o:["قرص‌های مانده را می‌خورم تا زودتر خوب شوم.","استراحت و مایعات؛ اگر علائم ماند یا بدتر شد، به پزشک مراجعه می‌کنم.","قرص‌ها را به دوستم می‌دهم که او هم مصرف کند."],a:1,w:"چنین علائمی اغلب ویروسی است و آنتی‌بیوتیک روی ویروس اثر ندارد. مصرف بی‌مورد فقط مقاومت را تقویت می‌کند. تشخیص نوع عفونت با پزشک است.",s:["fact","work"]},
+ {q:"پزشک برای عفونت باکتریایی‌ات آنتی‌بیوتیک نوشته و بعد از دو روز حالت بهتر شده. چه می‌کنی؟",o:["طبق دستور پزشک ادامه می‌دهم و اگر شک دارم از پزشک یا داروساز می‌پرسم.","خودم دارو را قطع می‌کنم.","دوز را دو برابر می‌کنم تا زودتر تمام شود."],a:0,w:"نوع دارو، دوز و مدت را باید پزشک مشخص کند. تغییر خودسرانه‌ی آن‌ها خطرناک است و مقاومت را بیشتر می‌کند.",s:["work"]},
+ {q:"فرزندت سرماخورده و می‌خواهی برایش آنتی‌بیوتیک بگیری. چه می‌کنی؟",o:["از پزشک تجویز آنتی‌بیوتیک را اصرار می‌کنم.","بدون نسخه از داروخانه می‌خرم.","از پزشک می‌پرسم آیا واقعاً لازم است و اگر ویروسی است درمان حمایتی می‌خواهم."],a:2,w:"سرماخوردگی ویروسی است و آنتی‌بیوتیک درمانش نیست. تجویز مناسب و آموزش مردم از اقدامات اصلی مهار مقاومت است.",s:["fact","paho"]}
+];
+const link=k=>`<a href="${S[k][1]}" target="_blank" rel="noopener">${esc(S[k][0])}</a>`;
+function quiz(list,title){
+ let i=0,sc=0;
+ const show=()=>{
+  if(i>=list.length){app.innerHTML=`<div class="card end"><div class="big">${fa(sc)} از ${fa(list.length)}</div><p>${sc===list.length?"عالی! همه را درست جواب دادی.":sc>=list.length*.7?"خیلی خوب! کمی دیگر تا کامل شدن.":"شروع خوبی بود. یک بار دیگر امتحان کن."}</p><button class="btn main" id="rs">دوباره شروع کن</button></div>`;$("#rs").onclick=()=>{i=0;sc=0;show()};return}
+  const x=list[i];
+  app.innerHTML=`<div class="meta"><span>${title}</span><span>${fa(i+1)} از ${fa(list.length)}</span></div><div class="bar"><i style="width:${i/list.length*100}%"></i></div>
+  <div class="card"><div class="q">${esc(x.q)}</div>${x.o.map((t,j)=>`<button class="btn" data-j="${j}">${esc(t)}</button>`).join("")}<div id="fb" aria-live="polite"></div></div>`;
+  app.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>{
+   const j=+b.dataset.j,ok=j===x.a;if(ok)sc++;
+   app.querySelectorAll("[data-j]").forEach((c,k)=>{c.disabled=true;if(k===x.a)c.classList.add("ok");else if(k===j)c.classList.add("no")});
+   $("#fb").innerHTML=`<div class="why"><b>${ok?"آفرین! درست است.":"پاسخ درست مشخص شد."}</b><br>${esc(x.w)}<small>منبع: ${x.s.map(link).join(" · ")}</small></div><button class="btn main" id="nx">${i+1>=list.length?"دیدن نتیجه":"سؤال بعد"}</button>`;
+   $("#nx").onclick=()=>{i++;show()};$("#nx").focus();
+  });
+ };show();
+}
+function sim(){
+ const N=72;let c,busy,doses;
+ const reset=()=>{c=Array.from({length:N},(_,k)=>({r:k<2,d:false}));doses=0;busy=false;msg="دو باکتری مقاوم در میان ۷۲ باکتری هست. یک نوبت دارو بده و ببین چه می‌شود.";draw()};
+ let msg="";
+ const draw=()=>{
+  const alive=c.filter(x=>!x.d),r=alive.filter(x=>x.r).length,p=alive.length?Math.round(r/alive.length*100):0;
+  app.innerHTML=`<div class="card"><h2>شبیه‌ساز انتخاب مقاومت</h2>
+  <div class="dish" aria-label="ظرف کشت باکتری">${c.map(x=>`<i class="${x.d?"d":x.r?"r":""}"></i>`).join("")}</div>
+  <div class="lg"><span>حساس به دارو</span><span class="m">مقاوم</span></div>
+  <div class="stats"><div><b>${fa(doses)}</b>نوبت دارو</div><div><b style="color:var(--mag)">${fa(p)}٪</b>مقاوم</div></div>
+  <div class="why" aria-live="polite">${esc(msg)}</div>
+  <button class="btn main" id="dose" ${busy?"disabled":""}>یک نوبت آنتی‌بیوتیک بده</button>
+  <button class="btn sec" id="rst">از اول</button>
+  <p class="note">مدل ساده‌شده برای نمایش اصل «انتخاب طبیعی» است: دارو حساس‌ها را از بین می‌برد، بازمانده‌ها تکثیر می‌شوند و ویژگی مقاومت را به نسل بعد می‌دهند. در واقعیت سازوکارهای دیگری مثل انتقال ژن بین باکتری‌ها هم هست. اصل مطلب: <a href="${S.file[1]}" target="_blank" rel="noopener" style="color:var(--teal)">WHO</a>.</p></div>`;
+  $("#dose").onclick=dose;$("#rst").onclick=reset;
+ };
+ const dose=()=>{
+  busy=true;doses++;
+  c.forEach(x=>{if(!x.r&&Math.random()<.95)x.d=true});
+  const left=c.filter(x=>!x.d);
+  msg=left.length?"دارو بیشتر باکتری‌های حساس را کشت. مقاوم‌ها زنده ماندند.":"همه‌ی باکتری‌ها از بین رفتند.";
+  draw();
+  if(!left.length){busy=false;return}
+  setTimeout(()=>{
+   c=Array.from({length:N},()=>({r:left[Math.floor(Math.random()*left.length)].r,d:false}));
+   const p=Math.round(c.filter(x=>x.r).length/N*100);
+   busy=false;
+   msg=`باکتری‌های بازمانده تکثیر شدند و ظرف دوباره پر شد. حالا حدود ${fa(p)}٪ باکتری‌ها مقاوم‌اند. ${p>=90?"دارو دیگر تقریباً اثر ندارد.":"یک نوبت دیگر بده و روند را ببین."}`;
+   draw();
+  },1500);
+ };
+ reset();
+}
+function src(){
+ app.innerHTML=`<div class="card"><h2>منابع</h2><ul class="src">${Object.keys(S).map(k=>`<li>${esc(S[k][0])}<br><a href="${S[k][1]}" target="_blank" rel="noopener">${S[k][1]}</a></li>`).join("")}</ul>
+ <p class="note">همه‌ی اعداد از صفحه‌های بالا گرفته شده‌اند. داده‌ی منطقه‌ای ۲۰۲۳ در گزارش GLASS سال ۲۰۲۵ آمده است. این اپ آموزشی است و جایگزین توصیه‌ی پزشک یا داروساز نیست.</p></div>`;
+}
+const T=[["شبیه‌ساز",sim],["درست یا غلط؟",()=>quiz(TF,"درست یا غلط")],["سناریوها",()=>quiz(SC,"چه می‌کنی؟")],["منابع",src]];
+const nav=$("#nav");
+T.forEach((t,k)=>{const b=document.createElement("button");b.textContent=t[0];b.setAttribute("aria-pressed",k===0);b.onclick=()=>{[...nav.children].forEach((e,j)=>e.setAttribute("aria-pressed",j===k));t[1]()};nav.appendChild(b)});
+sim();
+</script>
+</body>
+</html>
